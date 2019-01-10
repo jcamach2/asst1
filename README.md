@@ -332,7 +332,7 @@ Note: This problem is a review to double-check your understanding, as it covers 
   is the speedup due to SIMD parallelization? What is the speedup due to 
   multi-core parallelization?
 2.  Modify the contents of the array values to improve the relative speedup 
-  of the ISPC implementations. Describe a very-good-case input that maximizes speedup over the sequential version and report the resulting speedup achieved (for both the with- and without-tasks ISPC implementations). Does your modification improve SIMD speedup?
+  of the ISPC implementations. Describe a very-good-case input that __maximizes speedup over the sequential version of the code__ and report the resulting speedup achieved (for both the with- and without-tasks ISPC implementations). Does your modification improve SIMD speedup?
   Does it improve multi-core speedup (i.e., the benefit of moving from ISPC without-tasks to ISPC with tasks)? Please explain why.
 3.  Construct a very-bad-case input for `sqrt` that __minimizes speedup for ISPC with no tasks__. Describe this input, describe why you chose it, and report the resulting relative performance of the ISPC implementations. What is the reason for the loss in efficiency? 
     __(keep in mind we are using the `--target=avx2` option for ISPC, which generates 8-wide SIMD instructions)__. 
@@ -356,7 +356,7 @@ elements used. `saxpy` is a *trivially parallelizable computation* and features 
 1.  Compile and run `saxpy`. The program will report the performance of
   ISPC (without tasks) and ISPC (with tasks) implementations of saxpy. What 
   speedup from using ISPC with tasks do you observe? Explain the performance of this program.
-  Do you think it can be substantially improved? (for example, could you rewrite the problem to achieve near linear speedup?) (yes or no? Please justify your answer.)
+  Do you think it can be substantially improved? (For example, could you rewrite the code to achieve near linear speedup? Yes or No? Please justify your answer.)
 2. __Extra Credit:__ (1 point) Note that the total memory bandwidth consumed computation in `main.cpp` is `TOTAL_BYTES = 4 * N * sizeof(float);`.  Even though `saxpy` loads one element from X, one element from Y, and writes on element to `result` the multiplier by 4 is correct.  Why is this the case? (Hint, think about how CPU caches work.)
 3. __Extra Credit:__ (points handled on a case-by-case basis) Improve the performance of `saxpy`.
   We're looking for a significant speedup here, not just a few percentage 
