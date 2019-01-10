@@ -29,15 +29,24 @@ for kicks, you may also want to run the programs in this assignment on your own 
 To get started:
 
 1. ISPC is needed to compile many of the programs used in this assignment. ISPC can be easily installed on the myth machines through the following steps:
-Download the linux binary into a local directory of your choice: wget https://sourceforge.net/projects/ispcmirror/files/v1.9.2/ispc-v1.9.2-linux.tar.gz
-Tar the downloaded file: tar -xvf ispc-v1.9.2-linux.tar.gz
+Download the linux binary into a local directory of your choice: 
+
+    wget https://sourceforge.net/projects/ispcmirror/files/v1.9.2/ispc-v1.9.2-linux.tar.gz
+
+Tar the downloaded file: `tar -xvf ispc-v1.9.2-linux.tar.gz`
+
 Change directories into the ispc folder: cd ispc-v1.9.2-linux
 Copy the path to this directory for later by using: pwd
-Open your .bashrc file with an editor of your liking (using vim for example): vim ~/.bashrc
-Set the $PATH variable by adding the following line at the very bottom of the file (path/you/copied is the saved path from step 4): export PATH="$PATH:path/you/copied"
-Also execute this command in the shell for the current session: export PATH="$PATH:path/you/copied"
+Open your `.bashrc` file with an editor of your liking (using vim for example): vim ~/.bashrc
+Set the `$PATH` variable by adding the following line at the very bottom of the file (path/you/copied is the saved path from step 4):    
 
-2. We will be distributing assignment starter code via git repos hosted on [github]. Clone the assignment 1 starter code using: git clone git@github.com:stanford-cs149/asst1.git
+    export PATH="$PATH:path/you/copied
+    
+Also execute this command in the shell for the current session: `export PATH="$PATH:path/you/copied"`
+
+2. We will be distributing assignment starter code via git repos hosted on [github]. Clone the assignment 1 starter code using:
+
+    git clone git@github.com:stanford-cs149/asst1.git
 
 ## Program 1: Parallel Fractal Generation Using Pthreads (25 points) ##
 
