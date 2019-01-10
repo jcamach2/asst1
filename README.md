@@ -30,7 +30,7 @@ To get started:
 
 1. ISPC is needed to compile many of the programs used in this assignment. ISPC can be easily installed on the myth machines through the following steps:  
 
-From a myth machine, download the linux binary into a local directory of your choice.  You can get ISPC compiler binaries for Linux from the ISPC [downloads page](https://ispc.github.io/downloads.html), or directly download it via `wget` from the linux commandline.
+From a myth machine, download the linux binary into a local directory of your choice.  You can get ISPC compiler binaries for Linux from the ISPC [downloads page](https://ispc.github.io/downloads.html), or directly download it via `wget` from the commandline.
 
     wget https://sourceforge.net/projects/ispcmirror/files/v1.9.2/ispc-v1.9.2-linux.tar.gz
 
@@ -40,11 +40,11 @@ Add the ISPC directory to your system path.  For example, if you copied ispc to 
 
     export PATH="$PATH:~SUID/MYCOURSEWORK/ISPC
 
-If you are using csh, you'll update your `PATH` using `setenv`.  A quick Google search will tell you how. 
+If you are using csh, you'll update your `PATH` using `setenv`.  A quick Google search will teach you how. 
 
 2. The assignment starter code is available on [github]. Please clone the Assignment 1 starter code using:
 
-    git clone git@github.com:stanford-cs149/asst1.git
+    `git clone git@github.com:stanford-cs149/asst1.git`
 
 ## Program 1: Parallel Fractal Generation Using Pthreads (25 points) ##
 
