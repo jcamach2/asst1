@@ -40,7 +40,7 @@ Untar the downloaded file: `tar -xvf ispc-v1.9.2-linux.tar.gz`
 
 Add the ISPC directory to your system path.  For example, if you copied ispc to the directory `~SUID/MYCOURSEWORK/ISPC`, in bash you'd update your path variable with:
 
-    export PATH="$PATH:~SUID/MYCOURSEWORK/ISPC
+    export PATH=$PATH:~SUID/MYCOURSEWORK/ISPC
 
 If you are using csh, you'll update your `PATH` using `setenv`.  A quick Google search will teach you how. 
 
